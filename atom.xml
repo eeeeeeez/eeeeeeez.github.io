@@ -5,9 +5,9 @@
   <subtitle>彼方尚有荣光在</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://eztotheworld.com/"/>
   <updated>2018-02-18T22:55:09.107Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://eztotheworld.com/</id>
   
   <author>
     <name>ez</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/02/18/hello-world/"/>
-    <id>http://yoursite.com/2018/02/18/hello-world/</id>
+    <link href="http://eztotheworld.com/2018/02/18/hello-world/"/>
+    <id>http://eztotheworld.com/2018/02/18/hello-world/</id>
     <published>2018-02-18T22:55:09.107Z</published>
     <updated>2018-02-18T22:55:09.107Z</updated>
     
