@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eztotheworld.com/"/>
-  <updated>2018-02-18T22:55:09.107Z</updated>
+  <updated>2018-03-05T04:06:17.903Z</updated>
   <id>http://eztotheworld.com/</id>
   
   <author>
@@ -17,19 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://eztotheworld.com/2018/02/18/hello-world/"/>
-    <id>http://eztotheworld.com/2018/02/18/hello-world/</id>
-    <published>2018-02-18T22:55:09.107Z</published>
-    <updated>2018-02-18T22:55:09.107Z</updated>
+    <title>JavaLeaning01 - Fundamentals</title>
+    <link href="http://eztotheworld.com/2018/03/04/JavaLeaning01-Fundamentals/"/>
+    <id>http://eztotheworld.com/2018/03/04/JavaLeaning01-Fundamentals/</id>
+    <published>2018-03-05T00:51:04.000Z</published>
+    <updated>2018-03-05T04:06:17.903Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Classes"><a href="#Classes" class="headerlink" title="Classes"></a>Classes</h2><ul><li>Every program in java <strong>must</strong> have one class defined by the programmer. </li><li><p>Name of each file <strong>must</strong> be the same as the name of the class followed by <strong>.java</strong> </p><pre><code>public class SampleClassName {    ...}//End SampleClassName//File name -&gt; SampleClassName.java</code></pre></li></ul><h2 id="Main-Method"><a href="#Main-Method" class="headerlink" title="Main Method"></a>Main Method</h2><ul><li>Main method must be included in every java application.</li><li>Java applications begin to execute here.</li><li><p>Main method may invoke other methods.</p><pre><code>public static void main (String args[]) {    ...}//end main</code></pre></li></ul><h2 id="Indenting"><a href="#Indenting" class="headerlink" title="Indenting"></a>Indenting</h2><ul><li><p>Indent each line of code between two matching curly brackets by one extra level.     </p><pre><code>public class Indenting{    public static void main (String args[]) {        if (1 &lt; 2) {        }    }}</code></pre></li><li><p>Two styles to keep truck on indentation: <a href="https://oi.men.ci/code-style-oi/" target="_blank" rel="noopener">Menci’s code style</a></p><pre><code>// First one, close curly bracket without linefeed.The left side of left brace MUST have and ONLY have one space.if (condition) {} elso {}//Second one, linefeed everytime when have a curly bracket.The left side of left brace MUST have the same indent as the last code block.if (condition) {}else (condition){}</code></pre></li></ul><h2 id="Displaying-Information"><a href="#Displaying-Information" class="headerlink" title="Displaying Information"></a>Displaying Information</h2><pre><code>System.out.println(&quot;Hello World.&quot;);</code></pre><p>&emsp; &emsp; &emsp; System -&gt; class</p><p>&emsp; &emsp; &emsp; println -&gt; method</p><p>&emsp; &emsp; &emsp; “Hello World” -&gt; String</p><ul><li><p>Word to display must be in quotes. (unless stored in a variable.)</p></li><li><p>To print a blank line:</p><pre><code>System.out.println();</code></pre></li><li><p>To print without moving to the next line:</p><pre><code>System.out.print();</code></pre></li></ul><h2 id="Combining-Output"><a href="#Combining-Output" class="headerlink" title="Combining Output"></a>Combining Output</h2><ul><li>‘+’ symbol performs concatenation.</li><li>println will only print <em>one</em> String, therefore we must concatenate.</li><li><p>Concatenation does not add spaces.</p><pre><code>System.out.println(&quot;I got&quot; + 75/75 + &quot;on CCC.&quot;)</code></pre></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;h2 id=&quot;Classes&quot;&gt;&lt;a href=&quot;#Classes&quot; class=&quot;headerlink&quot; title=&quot;Classes&quot;&gt;&lt;/a&gt;Classes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Every program in java &lt;strong&gt;must&lt;/strong&gt; 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaLeaning01 - Fundamentals</title>
+    <link href="http://eztotheworld.com/2018/03/04/JavaLeaning-01/"/>
+    <id>http://eztotheworld.com/2018/03/04/JavaLeaning-01/</id>
+    <published>2018-03-05T00:51:04.000Z</published>
+    <updated>2018-03-05T04:06:43.447Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Classes"><a href="#Classes" class="headerlink" title="Classes"></a>Classes</h2><ul><li>Every program in java <strong>must</strong> have one class defined by the programmer. </li><li><p>Name of each file <strong>must</strong> be the same as the name of the class followed by <strong>.java</strong> </p><pre><code>public class SampleClassName {    ...}//End SampleClassName//File name -&gt; SampleClassName.java</code></pre></li></ul><h2 id="Main-Method"><a href="#Main-Method" class="headerlink" title="Main Method"></a>Main Method</h2><ul><li>Main method must be included in every java application.</li><li>Java applications begin to execute here.</li><li><p>Main method may invoke other methods.</p><pre><code>public static void main (String args[]) {    ...}//end main</code></pre></li></ul><h2 id="Indenting"><a href="#Indenting" class="headerlink" title="Indenting"></a>Indenting</h2><ul><li><p>Indent each line of code between two matching curly brackets by one extra level.     </p><pre><code>public class Indenting{    public static void main (String args[]) {        if (1 &lt; 2) {        }    }}</code></pre></li><li><p>Two styles to keep truck on indentation: <a href="https://oi.men.ci/code-style-oi/" target="_blank" rel="noopener">Menci’s code style</a></p><pre><code>// First one, close curly bracket without linefeed.The left side of left brace MUST have and ONLY have one space.if (condition) {} elso {}//Second one, linefeed everytime when have a curly bracket.The left side of left brace MUST have the same indent as the last code block.if (condition) {}else (condition){}</code></pre></li></ul><h2 id="Displaying-Information"><a href="#Displaying-Information" class="headerlink" title="Displaying Information"></a>Displaying Information</h2><pre><code>System.out.println(&quot;Hello World.&quot;);</code></pre><p>&emsp; &emsp; &emsp; System -&gt; class</p><p>&emsp; &emsp; &emsp; println -&gt; method</p><p>&emsp; &emsp; &emsp; “Hello World” -&gt; String</p><ul><li><p>Word to display must be in quotes. (unless stored in a variable.)</p></li><li><p>To print a blank line:</p><pre><code>System.out.println();</code></pre></li><li><p>To print without moving to the next line:</p><pre><code>System.out.print();</code></pre></li></ul><h2 id="Combining-Output"><a href="#Combining-Output" class="headerlink" title="Combining Output"></a>Combining Output</h2><ul><li>‘+’ symbol performs concatenation.</li><li>println will only print <em>one</em> String, therefore we must concatenate.</li><li><p>Concatenation does not add spaces.</p><pre><code>System.out.println(&quot;I got&quot; + 75/75 + &quot;on CCC.&quot;)</code></pre></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Classes&quot;&gt;&lt;a href=&quot;#Classes&quot; class=&quot;headerlink&quot; title=&quot;Classes&quot;&gt;&lt;/a&gt;Classes&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Every program in java &lt;strong&gt;must&lt;/strong&gt; 
       
     
     </summary>
