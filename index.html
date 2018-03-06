@@ -269,6 +269,191 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://eztotheworld.com/2018/03/05/JavaLearning02-Fundamentals/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ez">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://tvax3.sinaimg.cn/crop.0.0.960.960.180/005JNexhly8foci34uzn3j30qo0qoab2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ez's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/05/JavaLearning02-Fundamentals/" itemprop="url">JavaLearning02-Fundamentals</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-05T23:11:18-05:00">
+                2018-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/05/JavaLearning02-Fundamentals/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/05/JavaLearning02-Fundamentals/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Escape-Characters"><a href="#Escape-Characters" class="headerlink" title="Escape Characters"></a>Escape Characters</h2><p>(This top was not supposed to the first section but since I think I’ll forget it in the future so I’ll put it on the top.)</p>
+<p><code>/n</code> -&gt; <em>new line</em> (same as <code>VbCrlf</code> in vb)<br><code>/t</code> -&gt; <em>horizontal tab</em> (same as <code>vbTab</code> in vb)<br><code>\\</code> -&gt; <em>backslash</em> - prints a backslash character<br><code>\&quot;</code> -&gt; double quote - prints a double quote</p>
+<pre><code>//Examples:
+    System.out.println(&quot;\\HELLO\nHOW\tARE \&quot;YOU\&quot;?\\\\&quot;);
+//Output:
+    \hello
+    how        are &quot;you&quot;?\\
+</code></pre><h2 id="Semicolon"><a href="#Semicolon" class="headerlink" title="Semicolon"></a>Semicolon</h2><ul>
+<li><strong>All commands in java end with a semicolon.</strong></li>
+</ul>
+<h2 id="Packages"><a href="#Packages" class="headerlink" title="Packages"></a>Packages</h2><ul>
+<li>Java has several predefined classes(not user defined), and they are grouped together into <em>packages</em>.</li>
+<li>Packages <strong>must</strong> be imported before we can use them. <ul>
+<li><code>import javax.swing.JOptionPane;</code></li>
+</ul>
+</li>
+<li><code>JOptionPane</code> is basically a dialog box</li>
+</ul>
+<h2 id="Display-in-a-Dialog-Box"><a href="#Display-in-a-Dialog-Box" class="headerlink" title="Display in a Dialog Box"></a>Display in a Dialog Box</h2><pre><code>import javax.swing.JOptionPane;   
+
+public class Test {
+
+    /**
+      * @param args the command line arguments
+      */
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        JOptionPane.showMessageDialog(null,&quot;Hello world.&quot;);
+}
+
+ }
+</code></pre><center><br><img src="https://image.ibb.co/dCwStS/hello_World1_Java.png" alt="HelloWorldFirstVersion"><br></center>
+
+
+<ul>
+<li>JOptionPane is the <em>class</em>, showMessageDialog is the <em>method</em>. </li>
+<li>null, means the dialog box will appear in the centre of the screen.</li>
+<li><p>null and “Hello World.” are two pieces of information that passes to the method. They are known as <em>parameters</em>. Both of the parameters are necessary otherwise the program won’t work.</p>
+</li>
+<li><p>There are several types of message boxes we can customize:</p>
+<ul>
+<li><code>PLAIN_MESSAGE</code><center><br><img src="https://image.ibb.co/mZZNtS/Plain_Message_Dialoge_Box.png" alt="PlainMessageVersion"><br></center></li>
+<li><code>ERROE_MESSAGE</code><center><br><img src="https://image.ibb.co/ku6ctS/error_Message_Output.png" alt="ErrorMessageVersion"><br></center></li>
+<li><code>INFORMATION_MESSAGE</code><center><br><img src="https://image.ibb.co/dmdFDS/Information_Message_Dialoge_Box.png" alt="InformationMessageVersion"><br></center></li>
+<li><code>WARNING_MESSAGE</code><center><br><img src="https://image.ibb.co/cAqZ7n/Warning_Message_Dialoge_Box.png" alt="WarningMessageVersion"><br></center>
+</li>
+</ul>
+</li>
+<li><p>We can also give the box a title.</p>
+</li>
+</ul>
+<h2 id="To-Terminate-a-Program"><a href="#To-Terminate-a-Program" class="headerlink" title="To Terminate a Program"></a>To Terminate a Program</h2><p><code>System.exit(0)</code><br>It’s not always necessary but it won’t hurt to practice to include it.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://docs.google.com/presentation/d/1JjYc4cVVryrwm58RZ3vldYBGYUOb9mTFDM8K1-HxcFA/edit#slide=id.p21" target="_blank" rel="noopener">ICS3U</a>, Mr.Cutten</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://eztotheworld.com/2018/03/04/JavaLeaning01-Fundamentals/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -509,7 +694,7 @@ else (condition)
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
