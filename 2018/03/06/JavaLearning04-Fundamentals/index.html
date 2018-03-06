@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Categories">
-<meta property="og:url" content="http://eztotheworld.com/categories/index.html">
+<meta name="description" content="Whitespace It’s one or more characters(such as a space, tab, enter, or return) that do not produce a visible mark or text.  It’s often used to make code visually presentable. Java will ignore whitespa">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaLearning04-Fundamentals">
+<meta property="og:url" content="http://eztotheworld.com/2018/03/06/JavaLearning04-Fundamentals/index.html">
 <meta property="og:site_name" content="Ez&#39;s Blog">
+<meta property="og:description" content="Whitespace It’s one or more characters(such as a space, tab, enter, or return) that do not produce a visible mark or text.  It’s often used to make code visually presentable. Java will ignore whitespa">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-02-19T05:14:12.664Z">
+<meta property="og:updated_time" content="2018-03-06T05:19:17.260Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Categories">
+<meta name="twitter:title" content="JavaLearning04-Fundamentals">
+<meta name="twitter:description" content="Whitespace It’s one or more characters(such as a space, tab, enter, or return) that do not produce a visible mark or text.  It’s often used to make code visually presentable. Java will ignore whitespa">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://eztotheworld.com/categories/"/>
+  <link rel="canonical" href="http://eztotheworld.com/2018/03/06/JavaLearning04-Fundamentals/"/>
 
 
 
 
 
-  <title>Categories | Ez's Blog</title>
+  <title>JavaLearning04-Fundamentals | Ez's Blog</title>
   
 
 
@@ -257,40 +261,242 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://eztotheworld.com/2018/03/06/JavaLearning04-Fundamentals/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ez">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://tvax3.sinaimg.cn/crop.0.0.960.960.180/005JNexhly8foci34uzn3j30qo0qoab2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ez's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">Categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                No categories
-            </div>
-            <div class="category-all">
+          <h1 class="post-title" itemprop="name headline">JavaLearning04-Fundamentals</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
-            </div>
-          </div>
-        
-      </div>
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-06T00:17:59-05:00">
+                2018-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/06/JavaLearning04-Fundamentals/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/06/JavaLearning04-Fundamentals/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="Whitespace"><a href="#Whitespace" class="headerlink" title="Whitespace"></a>Whitespace</h2><ul>
+<li>It’s one or more characters(such as a <em>space</em>, <em>tab</em>, <em>enter</em>, or <em>return</em>) that do not produce a visible mark or text. </li>
+<li>It’s often used to make code visually presentable.</li>
+<li>Java will ignore whitespace in code, but using whitespace correctly will make code easier to read and understand.</li>
+</ul>
+<p>Wrong format:</p>
+<pre><code>public class WhiteSpace {
+    public static void main(String[] args) {
+
+    boolean isFormatted = 
+false;System.out.println(isFormatted);
+
+    }
+}
+</code></pre><p>Correct format (after whitespace):</p>
+<pre><code>public class WhiteSpace {
+    public static void main(String[] args) {
+
+    boolean isFormatted = false;
+    System.out.println(isFormatted);
+
+    }
+}
+</code></pre><h2 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h2><ol>
+<li><p>Single line comments begin with two forward slashes:</p>
+<pre><code>// This is a single line comment.
+</code></pre></li>
+<li><p>Multi-line comments are longer and can span multiple lines. They begin with <code>/*</code> and end with <code>*/</code></p>
+<pre><code>/*
+
+Hello,
+World!
+
+*/
+</code></pre></li>
+</ol>
+<h2 id="Math"><a href="#Math" class="headerlink" title="Math: +, -, *, /"></a>Math: +, -, *, /</h2><ul>
+<li><p>Add, subtract, multiply, and divide.</p>
+<pre><code>int sum = 11 + 28;
+int difference = 9 - 27;
+int product = 2 * 7;
+int quotient = 4 / 4;
+</code></pre></li>
+<li>(DON’T FORGET THE SEMICOLONS)</li>
+</ul>
+<h2 id="Math-1"><a href="#Math-1" class="headerlink" title="Math: %"></a>Math: %</h2><ul>
+<li>The modulo operator - represented in Java by the <code>%</code> symbol.</li>
+<li>It returns the remainder of dividing two numbers.</li>
+<li>Examples: <code>15 % 6</code> will return the value of <code>3</code>, because the remainder left over after dividing 15 by 6. </li>
+</ul>
+<h2 id="Relational-Operators"><a href="#Relational-Operators" class="headerlink" title="Relational Operators:"></a>Relational Operators:</h2><ul>
+<li>R.O.compare data types that have a defined ordering, like numbers(since numbers are either smaller or larger than other numbers).</li>
+<li>It will always return a boolean value of <code>true</code> or <code>false</code>.</li>
+<li>A few R.O.:<ol>
+<li><code>&lt;</code> : less than</li>
+<li><code>&lt;=</code> : less than or equal to </li>
+<li><code>&gt;</code> : greater than</li>
+<li><code>&gt;=</code> : greater than or equal to </li>
+</ol>
+</li>
+</ul>
+<p>Eg.:</p>
+<pre><code>public class RelationalOperators {
+    public static void main(String[] args) {
+
+    System.out.println(11 &lt;= 28);
+
+    }
+}
+
+//Output:
+    true
+</code></pre><h2 id="Equality-Operators"><a href="#Equality-Operators" class="headerlink" title="Equality Operators"></a>Equality Operators</h2><ul>
+<li>In Java, <em>equality operators</em> are used to test equality.</li>
+<li>The E.O.are:<ol>
+<li><code>==</code> : equal to </li>
+<li><code>!=</code> : not equal to </li>
+</ol>
+</li>
+<li><p>E.O. do not require that operands share the same ordering, which means you can test equality across <code>boolean</code> with <code>char</code>, or <code>boolean</code> with <code>int</code>. You test cross whatever data types.</p>
+<pre><code>char myChar = &apos;A&apos;;
+int myInt = -2;
+System.out.println(myChar == myInt);
+</code></pre></li>
+</ul>
+<p>The code above will return <code>false</code>.</p>
+<p>Reference:</p>
+<p><a href="https://www.codecademy.com/learn/learn-java" target="_blank" rel="noopener">Codecademy</a></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/05/JavaLearning03-DataTypes/" rel="next" title="JavaLearning03-DataTypes">
+                <i class="fa fa-chevron-left"></i> JavaLearning03-DataTypes
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -333,8 +539,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -430,6 +645,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Whitespace"><span class="nav-number">1.</span> <span class="nav-text">Whitespace</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comments"><span class="nav-number">2.</span> <span class="nav-text">Comments</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Math"><span class="nav-number">3.</span> <span class="nav-text">Math: +, -, *, /</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Math-1"><span class="nav-number">4.</span> <span class="nav-text">Math: %</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Relational-Operators"><span class="nav-number">5.</span> <span class="nav-text">Relational Operators:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Equality-Operators"><span class="nav-number">6.</span> <span class="nav-text">Equality Operators</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -594,9 +825,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://eztotheworld.com/categories/index.html';
-          this.page.identifier = 'categories/index.html';
-          this.page.title = 'Categories';
+          this.page.url = 'http://eztotheworld.com/2018/03/06/JavaLearning04-Fundamentals/';
+          this.page.identifier = '2018/03/06/JavaLearning04-Fundamentals/';
+          this.page.title = 'JavaLearning04-Fundamentals';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://eztothworld.disqus.com/embed.js';

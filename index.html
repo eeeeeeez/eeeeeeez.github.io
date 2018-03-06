@@ -269,6 +269,381 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://eztotheworld.com/2018/03/06/JavaLearning04-Fundamentals/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ez">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://tvax3.sinaimg.cn/crop.0.0.960.960.180/005JNexhly8foci34uzn3j30qo0qoab2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ez's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/06/JavaLearning04-Fundamentals/" itemprop="url">JavaLearning04-Fundamentals</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-06T00:17:59-05:00">
+                2018-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/06/JavaLearning04-Fundamentals/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/06/JavaLearning04-Fundamentals/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Whitespace"><a href="#Whitespace" class="headerlink" title="Whitespace"></a>Whitespace</h2><ul>
+<li>It’s one or more characters(such as a <em>space</em>, <em>tab</em>, <em>enter</em>, or <em>return</em>) that do not produce a visible mark or text. </li>
+<li>It’s often used to make code visually presentable.</li>
+<li>Java will ignore whitespace in code, but using whitespace correctly will make code easier to read and understand.</li>
+</ul>
+<p>Wrong format:</p>
+<pre><code>public class WhiteSpace {
+    public static void main(String[] args) {
+
+    boolean isFormatted = 
+false;System.out.println(isFormatted);
+
+    }
+}
+</code></pre><p>Correct format (after whitespace):</p>
+<pre><code>public class WhiteSpace {
+    public static void main(String[] args) {
+
+    boolean isFormatted = false;
+    System.out.println(isFormatted);
+
+    }
+}
+</code></pre><h2 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h2><ol>
+<li><p>Single line comments begin with two forward slashes:</p>
+<pre><code>// This is a single line comment.
+</code></pre></li>
+<li><p>Multi-line comments are longer and can span multiple lines. They begin with <code>/*</code> and end with <code>*/</code></p>
+<pre><code>/*
+
+Hello,
+World!
+
+*/
+</code></pre></li>
+</ol>
+<h2 id="Math"><a href="#Math" class="headerlink" title="Math: +, -, *, /"></a>Math: +, -, *, /</h2><ul>
+<li><p>Add, subtract, multiply, and divide.</p>
+<pre><code>int sum = 11 + 28;
+int difference = 9 - 27;
+int product = 2 * 7;
+int quotient = 4 / 4;
+</code></pre></li>
+<li>(DON’T FORGET THE SEMICOLONS)</li>
+</ul>
+<h2 id="Math-1"><a href="#Math-1" class="headerlink" title="Math: %"></a>Math: %</h2><ul>
+<li>The modulo operator - represented in Java by the <code>%</code> symbol.</li>
+<li>It returns the remainder of dividing two numbers.</li>
+<li>Examples: <code>15 % 6</code> will return the value of <code>3</code>, because the remainder left over after dividing 15 by 6. </li>
+</ul>
+<h2 id="Relational-Operators"><a href="#Relational-Operators" class="headerlink" title="Relational Operators:"></a>Relational Operators:</h2><ul>
+<li>R.O.compare data types that have a defined ordering, like numbers(since numbers are either smaller or larger than other numbers).</li>
+<li>It will always return a boolean value of <code>true</code> or <code>false</code>.</li>
+<li>A few R.O.:<ol>
+<li><code>&lt;</code> : less than</li>
+<li><code>&lt;=</code> : less than or equal to </li>
+<li><code>&gt;</code> : greater than</li>
+<li><code>&gt;=</code> : greater than or equal to </li>
+</ol>
+</li>
+</ul>
+<p>Eg.:</p>
+<pre><code>public class RelationalOperators {
+    public static void main(String[] args) {
+
+    System.out.println(11 &lt;= 28);
+
+    }
+}
+
+//Output:
+    true
+</code></pre><h2 id="Equality-Operators"><a href="#Equality-Operators" class="headerlink" title="Equality Operators"></a>Equality Operators</h2><ul>
+<li>In Java, <em>equality operators</em> are used to test equality.</li>
+<li>The E.O.are:<ol>
+<li><code>==</code> : equal to </li>
+<li><code>!=</code> : not equal to </li>
+</ol>
+</li>
+<li><p>E.O. do not require that operands share the same ordering, which means you can test equality across <code>boolean</code> with <code>char</code>, or <code>boolean</code> with <code>int</code>. You test cross whatever data types.</p>
+<pre><code>char myChar = &apos;A&apos;;
+int myInt = -2;
+System.out.println(myChar == myInt);
+</code></pre></li>
+</ul>
+<p>The code above will return <code>false</code>.</p>
+<p>Reference:</p>
+<p><a href="https://www.codecademy.com/learn/learn-java" target="_blank" rel="noopener">Codecademy</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://eztotheworld.com/2018/03/05/JavaLearning03-DataTypes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ez">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://tvax3.sinaimg.cn/crop.0.0.960.960.180/005JNexhly8foci34uzn3j30qo0qoab2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ez's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/05/JavaLearning03-DataTypes/" itemprop="url">JavaLearning03-DataTypes</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-05T23:48:06-05:00">
+                2018-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/05/JavaLearning03-DataTypes/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/05/JavaLearning03-DataTypes/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Int"><a href="#Int" class="headerlink" title="Int"></a><code>Int</code></h2><ul>
+<li>Short for integer.</li>
+<li>All positive and negative numbers, including zero.</li>
+<li>The <code>int</code> data type only allows values between -2, 147, 483, 648 and 2, 147, 483, 647.</li>
+</ul>
+<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a><code>Boolean</code></h2><ul>
+<li><code>boolean</code> data type can only be store either <code>true</code> or <code>false</code></li>
+</ul>
+<h2 id="Char"><a href="#Char" class="headerlink" title="Char"></a><code>Char</code></h2><ul>
+<li>Short for character and can represent a single character.</li>
+<li>Used to represent single characters, includes the keys on keyboard that used to produce text.</li>
+<li><strong>Must</strong> be enclosed in single quotes.</li>
+</ul>
+<p><img src="https://image.ibb.co/iaO47n/delect_Later.jpg" alt="CharExample"></p>
+<h2 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h2><p>In Java, one of its important feature is the ability to store values using <em>variables</em>.<br> &emsp; &emsp; 1. A <em>variable</em> stores a value.<br> &emsp; &emsp; 2. All variables must have a specified data type in Java.</p>
+<p>Eg.   </p>
+<pre><code>int myVariable = 7;
+</code></pre><ul>
+<li>The variable <code>myVariable</code> now stores the value <code>7</code> as an <code>int</code> type.</li>
+<li>DON’T FORGET THE SEMICOLON!</li>
+</ul>
+<p>More eg.</p>
+<pre><code>int myNumber = 42;
+boolean myBoolean = false;
+char vaingloryFun = &apos;Y&apos;;
+</code></pre><p>Reference:</p>
+<p><a href="https://www.codecademy.com/learn/learn-java" target="_blank" rel="noopener">Codecademy</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://eztotheworld.com/2018/03/05/JavaLearning02-Fundamentals/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -694,7 +1069,7 @@ else (condition)
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
