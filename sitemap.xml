@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://eztotheworld.com/about/index.html</loc>
+    
+    <lastmod>2018-03-19T06:06:12.555Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://eztotheworld.com/2018/03/17/JavaLearning05-BooleanOperators/</loc>
+    
+    <lastmod>2018-03-18T22:08:41.634Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://eztotheworld.com/2018/03/05/JavaLearning03-DataTypes/</loc>
     
     <lastmod>2018-03-06T17:33:53.405Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://eztotheworld.com/2018/03/05/JavaLearning02-Fundamentals/</loc>
     
     <lastmod>2018-03-06T04:11:46.197Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://eztotheworld.com/about/index.html</loc>
-    
-    <lastmod>2018-03-05T15:49:28.004Z</lastmod>
     
   </url>
   

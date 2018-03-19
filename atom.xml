@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eztotheworld.com/"/>
-  <updated>2018-03-06T05:19:17.260Z</updated>
+  <updated>2018-03-18T22:08:41.634Z</updated>
   <id>http://eztotheworld.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaLearning05-BooleanOperators</title>
+    <link href="http://eztotheworld.com/2018/03/17/JavaLearning05-BooleanOperators/"/>
+    <id>http://eztotheworld.com/2018/03/17/JavaLearning05-BooleanOperators/</id>
+    <published>2018-03-18T03:39:40.000Z</published>
+    <updated>2018-03-18T22:08:41.634Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Boolean-Operators"><a href="#Boolean-Operators" class="headerlink" title="Boolean Operators"></a>Boolean Operators</h2><ul><li><p>####<em>and</em> <code>&amp;&amp;</code><br>It returns a boolean value of <code>true</code> only when the <strong>both sides</strong> of <code>&amp;&amp;</code> are <strong>true</strong>.  </p><pre><code>System.out.println(true &amp;&amp; true);//prints trueSystem.out.println(false &amp;&amp; true);//prints falseSystem.out.println(true &amp;&amp; false);//prints falseSystem.out.println(2 &lt; 3 &amp;&amp; 4 &lt; 5);//prints true, because the both statements are true.</code></pre></li><li><p>####<em>or</em> <code>||</code><br>It returns a boolean value of true when <strong>at least one expression</strong> on either side of <code>||</code> is <strong>true</strong>.</p><pre><code>System.out.println(false || false);//prints falseSystem.out.println(false || true);//prints trueSystem.out.println(2 &gt; 1 || 3 &gt; 4);//prints true, because the left statement is right.</code></pre></li></ul><ul><li><p>####<em>not</em> <code>!</code><br>It returns the opposite of the expression immediately after it. It will return <code>false</code> if the expression is true, and <code>true</code> if the expression is false.</p><pre><code>System.out.println(!false); //not false, then print trueSystem.out.println(!true);//not true, then print falseSystem.out.println( !(4 &lt;= 10) ) ;// expression is true, not true then print false</code></pre></li></ul><h2 id="Precedence-of-boolean-operators"><a href="#Precedence-of-boolean-operators" class="headerlink" title="Precedence of boolean operators"></a>Precedence of boolean operators</h2><ol><li><code>!</code> is evaluated first</li><li><code>&amp;&amp;</code> is second</li><li><p><code>||</code> is third</p><pre><code>System.out.println( !(false) || true &amp;&amp; false); //!(false) -&gt; true//true &amp;&amp; false -&gt; false//true || false -&gt; true//therefore, print true</code></pre></li></ol><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.codecademy.com/learn/learn-java" target="_blank" rel="noopener">Codecademy</a> </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Boolean-Operators&quot;&gt;&lt;a href=&quot;#Boolean-Operators&quot; class=&quot;headerlink&quot; title=&quot;Boolean Operators&quot;&gt;&lt;/a&gt;Boolean Operators&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;#
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://eztotheworld.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaLearning04-Fundamentals</title>
